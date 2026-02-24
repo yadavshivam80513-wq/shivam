@@ -1,0 +1,388 @@
+!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Taste Haven Restaurant</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, sans-serif;
+      line-height: 1.6;
+      background-color: white;
+      color: black;
+    }
+
+  
+    header {
+      background-image: url("https://images.unsplash.com/photo-1552566626-52f8b828add9?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fHJlc3RhdXJhbnR8ZW58MHx8MHx8fDA%3D");
+        
+      background-repeat: no repeat;
+      background-size: cover;
+
+
+      height: 80vh;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 3.5rem;
+      margin-bottom: 20px;
+      text-shadow: 2px 2px 5px black;
+    }
+
+    header p {
+      font-size: 1.3rem;
+      margin-bottom: 30px;
+      text-shadow: 1px 1px 3px black;
+    }
+
+    header a {
+      background: orange;
+      color: white;
+      padding: 12px 25px;
+      text-decoration: none;
+      border-radius: 25px;
+      font-weight: bold;
+      transition: background 0.3s ease;
+    }
+
+    header a:hover {
+      background: orange;
+    }
+
+  
+    nav {
+      background: black;
+      padding: 15px;
+      text-align: center;
+      position: sticky;
+      top: 0;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: orange;
+    }
+
+  
+    #about {
+      padding: 60px 20px;
+      background: white;
+      text-align: center;
+    }
+
+    #about h2 {
+      margin-bottom: 20px;
+      font-size: 2rem;
+    }
+
+    #about p {
+      max-width: 700px;
+      margin: auto;
+      font-size: 1.1rem;
+      color: grey;
+    }
+
+
+    #menu {
+      padding: 60px 20px;
+      background: black;
+      text-align: center;
+    }
+
+    #menu h2 {
+      margin-bottom: 30px;
+      font-size: 2rem;
+    }
+
+    .menu-items {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .card {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 3px 6px black;
+      width: 250px;
+      transition: transform 0.3s;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+    }
+
+    .card img {
+      width: 100%;
+      border-radius: 15px;
+      margin-bottom: 10px;
+    }
+
+    .card h3 {
+      margin-bottom: 10px;
+    }
+
+    .card p {
+      color: grey;
+    }
+
+    
+    #contact {
+      padding: 60px 20px;
+      background: grey;
+      text-align: center;
+    }
+
+    #contact form {
+      max-width: 500px;
+      margin: auto;
+    }
+
+    #contact input,
+    #contact textarea {
+      width: 100%;
+      padding: 12px;
+      margin: 10px 0;
+      border-radius: 5px;
+      border: 1px solid white;
+    }
+
+    #contact button {
+      background: orange;
+      color: white
+      padding: 12px 25px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+
+    #contact button:hover {
+      background: orange;
+    }
+
+
+    footer {
+      background: rgb(168, 199, 30);
+      color: white
+      text-align: center;
+      padding: 15px;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+
+<body>
+
+  
+  <header>
+    <h1>Shivam Restaurant🍕🥂</h1>
+    <p>Where Flavor Meets Elegance</p>
+    <a href="#menu">Explore Menu</a>
+  </header>
+
+  
+  <nav>
+    <a href="#about">About</a>
+    <a href="#menu">Menu</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  
+  <section id="about">
+    <h2>About Us</h2>
+    <p>At Taste Haven, we believe food is an experience. Our chefs craft each dish with passion,
+      blending tradition and creativity to bring you flavors that delight the senses.
+      Whether it’s a casual dinner or a special occasion, we promise an unforgettable culinary journey.</p>
+  </section>
+  <section id="menu">
+    <h2>Our Menu</h2>
+    <div class="menu-items">
+      <div class="card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5fArSkja1x_p5n_ODoZgj8Ed2UdvKES17tQ&s" alt="somosa">
+        <p>very testy and crespy somosa,Samosas are flaky, golden pastries with a spiced potato filling. Deep-fry them the classic way or ...</p>
+        <h3>Crespy somosa</h3>
+    </div>
+      <div class="card">
+        <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxMSEhUTExIVFhUXGBcYGBcYGRgaGhYYFxcXGBUYFhgYHSggGBolGxcXITEhJikrLi4uFx8zODMtNygtLisBCgoKDg0OGxAQGi0mHyUtLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLf/AABEIAPEA0QMBIgACEQEDEQH/xAAcAAABBQEBAQAAAAAAAAAAAAAFAQIDBAYABwj/xABGEAACAQIEAwYDBQUHAgQHAAABAhEAAwQSITEFQVEGEyJhcYEykaEUQlKxwSNiktHwBxUzcoLh8UPCFiRTojRjg5PS4vL/xAAZAQADAQEBAAAAAAAAAAAAAAAAAQIDBAX/xAAlEQEBAAIBBAMAAQUAAAAAAAAAAQIRIQMSMUEEUWGREyIycYH/2gAMAwEAAhEDEQA/APO66KVVrVWOH27GBOJdc1xtVBiAnLQ8zv8AKsbdOjHHbLKhOwJ9Kfbwdw7I3yNSXe1NzkqAHyqs/aK/yYD0Apbp6iyvD7hMZT7wKd/dlyY0+dUP7+v/AIvoKhPGL0kZzrRyNYjC8Hf8Sj3/ANqX+62/GnzrO3cW53Zj71F3h6mnyOGgv4Rk3j2M1EKG4JyW3NEMpppOYU0V2Q0uQ0EcpqcGoAKkUUGVwKiNT5aRrdAMWnA0gSuy0A/NSTSFaTLSB1NJpwWlyUA2KbUwt04WxQEINc1T90K426YVa6rHd11AM7mtt2tQDh0bELbEewFZxFBIA3JAHqa0nbefsj/6ZjrzrLO8xr05xXk5ps0tNNaIKTTeftXE0k60yKaQmlppoIQ4Kma4B5GtKuFrO9njF0ehrVi8tTTiD7JTThKuC+K4XRSNQGCNPGCNX+9FOW8KexpQ+yVzYerzXlqJrw60BRNim9zRz+5r5UP3TZSJBOkjqKhTANzIX1mfoKO6DtoWMPS/ZaJ3cG6zpmH7uv03qkcWKN7FmvKIYau7ipGxYqP7QKCJ3dPWzTTcFPS+KYONilXDU/7UtL9tFMGfZ6Wk+2iloCpgbLd4mv3l/MVr+2y/+Uue351ncEh7xJGmZfzFH+3dnNg21iCD6686y6nmNen4ryY00mlNNrRkaTSnlpTwDyE0jkggHSmRNelIQaVjHMU7C4Z7rZLaF2PJRPz6D1pkI9m8Kz3YHQ7VrU4E52Bql2Q4PicPeLvaMG3IIKtp5kHStIeI3GbIobN0nX5Ut4/apjfpHwbswXf9pIUAn1qxicPhLXxZdPOi1qxew6h7gksAd5UA7CBz9aFYziIhsyqQRlhgDA3keelc3Uzm3p/H+Blnh3XSmb+EJ0C1zLhztl+dZy/ZWSU0HTpWk7LcFDA37xCouoDc+hI5jy51Xrbm6nTuGXbYf/d9sgEpAOxMieenWrOC4Cl4wqaCMxHIeZqrxixcv42xbUN3ZAKmYzAznY/h2IjlFbzhGLsWx3MqhUmByediCd20230pbqbJ9HYniCWlAM9AoEkwNgPQV4v2n7Q3LmIm3cKqCYUSNSTEidgsAfPnW3/tF4s1l5FtHVkU+ICV+NSAZ5715pd4hbKqMgzFyxcfGAPhEncRHyrbHGa2xzy50I2cRjSNbpSesFvpt86vcOxF1RlZe8WfECu56kjc+pq3b7QWXiEK9Z1+lXWxyMIQkfOfaNfkIrPf401+qa4IXrulrukJ5SYHUgSaK8Q7LpbXvEm5ajRkIOvn5VR4nduNaFq0AqyWLCfGVBLBo/nUnZW/iLbWyl3wPc7tlOqmBLAgjcLJqpS7Q9eHSCRqPy9aQYDrVj+0fjYDjDWoUIQzldDm5DTpNV+DcUF9YP8AiLuOo/EKrG7m05YyXRBgaeuAogpFLnFUzUf7uFdVzvK6gLli0M66cx+dXO2Kk4Rx6fnUlq34ljqPzqbtNZBwtzNtBg+fKax6nlv0/FeKvW54H/Z09xFe7dVS0EIDrB1GZo0Pl9aD8D7OPiJY+G2CAzttLEAKv4mPSvXhwu5pkRisCDp/Onln9Fjh7oBgux/dDwrZnqDP1Os09uDtbVnuKpUdADt10ovdsOkBpEzHOY3iKrcRcdzcBcDwNvI+6azrWMlju1OFtDRFZtwAo38zyoZwbtTexGIKoqoCjroNEkfGx02rFC2XICgn9fTrW1wNpbWAcJC3IPeyPERuCDzhSPDW2PTx9sL1L6aPsz2hssxsJBQSsxlznmYOu81pcHwyyjszQXgjcBtAMum/X5ivD+D4goyspkgkkbaT1r1hOIi5at3AAXYLEjaNIPvpWXV1jdu/4ON6mX/BC3xS/kujEZQpAVEInQGdeYrG8Xu9DRTiF9o1YmOZn9azPEL/AJ1hu5V7Fxx6eN17Db19wQEBZjso1JPSOdRcO4tiL1wIGZi7DwzoeQ9BUL8Qa1cW4kZlMrPIxv7Vrv7PuzdzvUxLxkBLkQS7GGPhEa6wa6ZqY8vC+Tl3dTh6DgcIMNh0RiHuAGX5gMSSo6DWq17BpeVkYe+xHQg/X2q3dxVi/wCJL1vpBbL9Ggg06Qikn4QJJ8h586WmTyHtdhMUjphrj5kZ5S4TvMABiem/zrT8J7BWEIzFX3XMSYzT0MDRfEd45+WQ7VcZOLxJInJsg6KOfvW67NfagttWcG3ljIYkkzlWCdeXL8qq29rOSdy23ZpEJ0GTuxyh8xmCQPhBABAGvlQgYMZmQAlcpbMREQOh/M6VtcMAHdGbXICkk6B2Kkr+LVSJ31Gw0ATtmFsYYuAveOFUtlGqpqPDtoSdYnSsptrwzC4oLbFvK7iddgJmZzbwCOXU13ZzG3ReywQ8MVDNIVyMoI9tPehmC7RSvduoAMkkT4mA8M66DUiAPamti8hDKJHKDyGozRtV2VEvsQ7TcOFy2Lh/xpg7arrMjlrtWSwjPbuBlkMD/wAit3wq9bxNq5cvnxW/E2uUOBsp5eVZm5eN2815gAWjQcjlANX076GUl5bTCYabalhDEAn1pxww6VD2f4gblvK3xJAnqOR9avu3lWumVVu6XpXVLPlS0iaTs7g2KOwGUmMrnyPiAHnFJxjhL4i33CwZOrbAA/ePpvFdh7lw4FblgA5Ac6TBMNLEHrHKtDws2xbJRsysZLT/AOpBWJ8iKwy5rWcRU4NwO3h1S0NkLMkzJHMtmJnU/WnniNzv3TuwttAIY7MSfFGukD8/KirLnOUaQNTz1kafIGhfaq8DhS6xJGk6ExHv/wAU9CXd5QjGWocs6j97MCxA3gD4R5UA7a443V7qyLVxXKozuQoGYiIndRBJ9DQu3YiBvIkk/eMgz/lAH5DmayPbnHzctYdGIVYY76TIWesCTHnUyLv23OIwWDthHtrbhFyECBJ3kRzzDXyoRhTZtA65iW7w+bnfXpQG3mvXu7tf4KoQhMglhqMwPNjPzqHD3jzqZNq4hlywl12QgIzNKqqgAzvr5AflUvDmvYfwXbXeWG2k5WUkDVYgkAsCRTMfazrmXRlMqfMa0LbiLupFx2JGkk7ayfmfzqtL6fUuN3OBq5iFHhzySJAJnTbT+uVCMU2bQRJIAHUkwB9aguqCgOkageq7n5EVa7HYFLmNtd4RlRi5kxJUSsdfFlMeRpTCOjqfNzymtPQ8B/Z5hF7t27zvVgmG0nSdCNvKidrtFhMDfGGuyvhUq5GmvUjY6DlRvD3QwkEGvFOK4s4nicsZXv1UT+FX0HmIFV5cVvnb1njnCWxk926rb8ZkCcxy+FhAOYaxEcjGtZ+52St2r9mwj3QrvDjMSCnigvJ8JYqQI6CRWtbDtbu94SFlVCxCgEtrEDczvrzqe/d7qGuiRJOeBCkrlIKrMnQtUyh53xrsAlm/Y7vPDlpYLKWyIM3M2mQ6bkHwnrWlwNs2rYvBluOB8SJPehvhGUN1IIM6UcuYNXRbZLMMupLSSTOaRvttyg8qoNw5pywjkO2bKAF7pyTLiRnaEU6bMBodadtKaVu6uC8FYqApzQczMysn3iT91jAO2hrM/wBqOIhUt+Un3JogMS1i+911kOCRcYoDeJYKuVZJykKDH720bYntJjLt66TdJmNo+EdCDqKWPlWXhmx6VMjxPpr5065ay6kEVGzaE6f0a12x8LFm62UqDAY6gnSBtPPf8hSww2ifptUAaQY5f1FSpuI2PPz0pkNcC4hkujTRjlIHnt8jFa5r4FeeYI5nXkc2nsRFbO7VyjJd+0rSUMrqEtHwPGstlSsbsCCJBPKfnW0wAGbuQQDbVAwCgAyoIYRsNYEfhrz7s5ezWXA+64P8QI/7a0WCxVxLtmFzK7BLh55f+l7Aj60upjO2ZKwvpuWthZJgDcn25/Wsp2l4lauWS6sCiMQDO5nxR1109qn7bccOHwl0hAxZhZQA6sziNY85EeVee8R7KcQu4ayAucKrFlBCEMWZpIO+jRWVq8JrmlPHrC6s8RqQOg6Ab1gMTc+04t7qAlXc5RGuX4V032A0o/w7sNibjgXUyWzq2vjy9AIInbet5wjs1YtJkRYILeMxm0EZp57n5GjjE7vJew+FS3ZUvbGqsSwjwc9OZOi1kO0/Bsp762JB+KJ1JJ8QEbRv6Vtblod0AfvJJ6hW1KqOQMD670Ex2N+zoXNtnQuoEMv7JPCJM6uAJqF+mMsvMDrA9zsPKg3FrRR+8USeYOxHMEVtOO8J7v8AbJJUlSVHMA5lPkJ5Vi+L4/MY66z67wOlXjdpy4ht1FhWT4GkjyPNfakwtwLfsEgR3iTPSRVS2Tp05DzO8+dQ4yZX1H56Ua5K5cPd24OmUHDm4jMfunNb8W8qT4R6GsvhewItYgXrt0QpzBInX4vGTuNfoK039nGJ73CIXOoJA9RIFWu0VoSMsxA94Maf1yqJuL8qfEMYvdlVJz5WCknbwwp9jWL7E8exAutg7zMc2gznW3+LWCQMsj3860iWNayPbXBNZurirciIVyOUzlafQR7CqhZfj0+3Zt2sqhmbKZzMWhZ0UAH70T4Ygb6UNxZGc20ug3FW4/dZwHi4AGF3LA0LaKdyupoVhMZaa2ly5inDN4TlbZ4Ug6CSI28z60/jWFwdtGumdQJRf8RlJhcxiVO0jfXWpOBdnu7huuwm4gtW7auNRlh/DB2IHxDXcRrJBcMurcxJN9lhmDNcuySygQRuBrpy0ipbPBgzC7auMgB8OpkADxDNpBnnS3uDWxu3MamTpl2j1k+wonBXdVOPYPDLdCWL82mzG4xlsomVVVgAnkDPLWsyiBiVBYjXlv5+VaTCYBbniCsqLmlzsYGgHnOnOm4JLdouAg1M5idBA1WD130PKrl4RZugS4K6T+FR+nWm27myjXUa+VaTjpPcAosCfEQDEGI19ayYJBBFXjdpyx0vCQwg8/061pOE8SLhg+459QdqzN1ipBidR666T9aOdn8NmDewP9dKcKjP2haWm/3fXVSdtBwnBC0jgfun5GP1qwMQQCASAYkjcAHceYBn2qt2evM94W7g8LgqflIPzAq/xHAtZInVD8Ljb/Y+RrSYzPG4lje2yinBbKX7Vu1dGZrVzvASZzMs5WJOvOfatRYtHUaRvoI5nf2isNbuOoUga7qRsY315enlRaxx53ZFuDKkxPU6+5Glcn+N1k6LO7mDVzIM0DQQJA0MxoOulA+J3AAWAnLGWNJaQo9hJNXziJLDNmnxT5GVAAP+XU+dAHx4kW8vjN5VGpjItxDM66RlHsaVpSLePfKBIIClB6ZQVIj01oJeuq9u2SNHb4TpOWGefp7Cr3aLFgLlBk5lLAfdVsxYn+Fh71mO11wM62LbA3bVnvFQfeMpOvXf2FKTat6hvEeNMuYMZZySp0AXchhpJ1ER6Vir3DMpJmdpnck7n5zRXFhLi27buBdXNAkrnLKG0J6QVnT4fOhFvFtcktOkZBtln4vWdN+lXJpFy2aLYFDrqG7cVbZkkgR77+lEyd6H4dzbbOujAiDTxGXPD2TsT+xHczqpCzEBiZbMfk1HsfhXLHmgAEzOpJLSOQ0HzrG9jsWLym5aCy12W11DC2IBB32at5gGuMpBgdQZnXcDr/tWV4rTf0zPGeIWsIme40DYACWbyCyJ/IVkuIdre+UrYwyktp+2CsJGzBNQTtvtArdcY7KWL6ZSsMTOYeJpHViZjxDSazSdlDh7gO8TuOvwwPaPeqlhXYF2ewl9LguMoMAiDoBnMnKBpJ1oh2g7QLauIip3lx4gEwiySBmJ0iY+RorcsYghUW3kLCXcFfAoDEQxO5CgGPxDkDQ7jWBi7Ya20KLikj8QAnMT1H86c1byLuThUx6Gz4XuZQQxKKrMAX8R1JGoPlQ+/jUY6lnH4B4F9zJJ9oo52hwneW84mdx18/rNY1dKWM3yeV0uXO0j+GxcAyoAEK6eGdJHM8pqqb+YlugMDqdYMfKq3FLMqGA1G/pVXDYgEROorTXtjvlpDi0KZLjwpjMBBaDGgoCyBdQQehOnvH1qQsx9PzpHwiEy2vuSPlRIdqK3fLyQNOR6x0rV9nreRSWEE7dYp/ZvgJyHE3FXI65LU6tOaWcDYCAR70YHD1rSRnaZ369a6l+wrS1RLOGv5XVujD869A4eVdSrQRrmU7EHUGP1rzyBPOtRwbFKxSeYKn0jn5g1M/DXcXwg2czWZZDqbZ1I81Pl86HXbyMilgpZdvI9fX068qKG8wuIs6A6HrG2tDsWyX2OgR55kBXI0IJ+6089jz60/wC3PjL+Tm8eYDYfiRBg6STptKqc0TyXUz6U+3iwh1Oe5kWIOgBckEjr4gflXYi0RmVgQdQQdCJEGgeKstZViASJXUCYVAAqn3C/Ksc+jli1nUlGsYVZpCiGK94dPGAWmfJQqkRzGm9eV8f4nc+2NftswfvGKuDqoBhfpyrRYviLrauM0hnhVA0C7QT7B/nWLuyzRRhOU9S8C/CsO93vMS1w97KhG01dzPTkATUvEMOFYQ0ndvWT+kGrg/YWVUxmObwn8TDK5PovhoXe0MAkgaCd6L5E4iNngRNQXF8NdeUAlucb9KgOJ2ABg8/5U5Ct+02D4tew090+UZlYjQgldp+deo9ke1/fuoOjMgDhjqGWYI0gqZO2ugrxy5iPETEjpVu5ilGxMx+nUVWWG0456fQP2pczEMzMBl0IgQdSEOkgkk9cvOq3Eu0iWsi3ENwgKWKCAwzBSyAnxxzHKfKvGuAdp8Ra0Y95bMght9R919wa9FwnaHD3VDWineKJIuKSwkyVUxqAYmPM1lljcWuOUyE247YcZpCyzKFIaZAkh1EMNmHnlOtZjiODvd99pkvb+zXDbXMvhUqBnKDaSx01PpEUXxKLKm6qFll2yyS2Y84BjQx5z86zcUuOT+xVUHhQlsxVRHhIGyyVMDypRVMweOt92itKZ2KKGEZmCgzPQ5tD51lOP2hauET50/i3Z68Q1y4coViY1gqSvjXpvPtUfEuEcQxN8Lbs5jlALgCNNCzMxhSd4HtV4YbvCM89TkOuX/DJHp1NCsNYbM3hgAzH6CvYOGf2bIljNir0sVhgpAWSNSC2rEctvequH4JgrDKLYfEOmokjJI/GYGb028q27LGNylYXg/Db+IJ7q2WAnyAiZzMdB5CaMcB7PtdvKtweGRKzM+pH5Vp7huX3hzC/gXRR7UXtotnxAQEWR6toKcw9juN460uESAlsZQBt7fICqGUioLmMO/OmfaaVyORY1rqrfaq6jY0s3B0FWMA5Gm3MVwpGY8qUug0WfMgJ3EfTSaDcTSJ3htTB1kVbweIlNf661Xx8ERJ2/wCDVZY7gxy1VWzxEMMl0ZwNFcaMvQT95fI/SpVZRPjX3MH6iKB4cnvAP3gI96NcX4eX1tgTvGgBMfQ0Y5Z64OzHapxHhlm+MrrOs+EwZiJld/egNrsXbt3VuJcYwZyOAdfu6rymOVQ9o7vdWyG8LsQI5jKZJ/KhfC+KXkQt37HNIQMZGnxNDdNop90s5ha54qfiHZvE5gcoffMQw1JJOgaD0oPf4ZeVpazcXr4Wj5xFaC32tvL8Sq3zU/TT6Vds9u7akC4jD08Q9zv9KntxvgbrzfiGJ8WXpvVVbpYjXavX7XHsHenxKSesfLxRUy2cGx8Vq0dOaJpryOWrmMiLLbt5Lbw06kTTmwSzufSvWMWMCkQMOORgWx+e5qC/xzAJqqWzpHgtpE+RA0qdfqtfjzrDKp0Ee1FMHwm43wW7hHkrH6gVsbXbmyuiYc7g8l220Ap9/t4z/wDQB/zGfpAqdY/apb9KfB+AY+RCFQdCXZdY9TOnpR7/AMO3luqRdUEAzlUFpbRpfToI3iKq4btjiCrsFtAKJAjUxykUN4p2mvraS4FCAnKFtlszFtRIWAOZ1M05jhStzjd8P7M2Ae9vKXMAE3mEQOqfCREfd5VDx3tVhbEIpDMNAqfCvtoI9ax+Hx2Ie2BfdrUknKcxItgSGOpgk6aa6GgXBeHm++niA1cEnUASQTykfnV92rrGJ1vm0XxfaG5i3CliFMxoQCs8uuoo/wAPwgS3oKG8L4KUYvdM3SYI5W42tr0CzHz9aOXydFXyH86qY6TvaHBW4YtyqvxzF5oUc/Ef+0f11oq9sKCOSiW8+g9zQJ7ZYknnUdTLU0rGKAQk09rFXe4FRuBNZLU/s1LViaWgClq3PMVOtidyKzbYphzph4s1UTVrh42aoLYmQeWhoAeMvsKkw/GWmCunOqxyKxNibUXAw2mfQzWgtnNQm04fUa+VWcHif2mQ+q/veXkRVQUzi/Chf8LjUahvy9azd7gCwLZYyvhB8uWlbbGX4kRGgn0Os0O7kFpPl86dkKMLjOGLYQvc8RDZQJgHnmPOguFyXpBUA/p5V6D2o4Ib9rKh/aDUDafL3FYTh/Dblpe8dSPE6H90jTX3kVNnAl5cvCgdoplzgoJ56dP+aLcC4dcuQwMLzJ29utHLvZzM4i42UiG01B/drK3lpMdxkcDwHO0Ksn0/r50ax3Z+3aAFy40xJClQBpPMEkxz0rV3bdnCWwvwKNWY6sx8zux8thWG43xhsQ5IGVdBAjUDQSQJ2qd23hWpjOVa3bt6+IjpGvz0q2i2ysktOkDT6nlzoYoM7VOlo86rtT3CYxaKuVF/iJO/UDTatJ2cxbXLBJGtslZAXwqSCY0mWOkCJjUwKy+B4NevfAhg6ZmML56/yrRcAsfZy9suGLbhZ0MiCSegB+dXhjqpzy3FHtNeYZSYEqSQPUgT/XKtdwvg2HwuGzKf2lwAiT4i0hiT0UDL8x5VluOYG5iMUgVSbQktvBVDqCeQLEj2o2l4kOsyTq7gaKukAee8Ada0x82ooqzyi3GGsR5s0kk+5JNScOwxJzEa8h0pOCKt0S0hBoo6+/nUPajindDuLZGc/GQdEX8APMnmfaqt1EwO4nxPMSqfCDqfxHr6dKpDEHpQx79wdKa+Kugcornu61gp9q6io3u+VBTj38q5cY5kyKBsU7yuoV9tbrXUy2OXMOp2NQ3cMn4qp5WJqR7emwpGlWwg51as2rYEzrQoOdRFcOhAo0Bm3fVdRV+1etOJMkiIjQoeo13rNupEDrTrIZTKmDVY3QrTXL7mM2um/X1qSzYulC+Rio5xprVHCY6YFyAfz6EHkaIjF3VVlS74SIII+enMfKteLyjaB5fxahhsRyjlQnE4EPf792kxBU/DMCDpp/zRnB4dp8J3HPY+86fWq1y0JZQ+U9DvpppNTlODlQW8UgG4jooP00p2P4ylhVKLNxtgeXmabh7DnwlRE6ttp/uKEcfw7PfmGAEBZBA66Tyk1l2NP6ijibd3ENmeTJJjkJ6VMOAONMkeUj9aOcOVHUzOdRJ2G3MCNabauvLKAWBkacx8qviIt2o4XgesFlB8vF+Wn1qxb4Xatt428xI/TnUjWHeQMwI3A0y+RqbD8LuwLrZQo+88FflrpT/0SvfxT3CBaDDkDzjbT/aqQVrVy4FMNOp/CqjYk7Tv1itrhbzFctoeJhBuhSiBR+EHcnyFLgOz1lZ7xRJ8RPQ7ycxjnzmq7bsu5k7eMvhSqq2VwAp/CiiCY5TvRzgvCgbMuwW1uWJ1b1OwHzJq1xi/YtWyyWzeB3lpQR+ICA3yrJ3+NPcYFmEclGij0FFuik20vEeOqq91hkgbFyNSOiA/CPPes+7+VQXcZv4hVI4t+oisrbfK5qJMTiiNgKr3sUTpUV27OpIphINAdctzrUY6VKQOpqBivImgJdKSoP8AVXUHsYa8eu/lTtxzn0pUUT8LR61Zt2gTrMUEqMgGs0xlHX6VdfDJyVtfOrNvhIJHp1oAY0QNZqWzhi501jerR4aoJ3+f+9WcFZ8XdrInc08Zui3hc4RhF+O58K7Dqavg23Yyrf6aXHIiDJBMdOtRcPW4QQikdSdK03fSVe9cVD4ZnoR+VSLaUkd6BqdCTHLnvUGL4HcLZ82o6mi/ZvsybxbvL+gGijefeqn6OEQRQjaqvijUBvCRuD/Km95bUBTkOo8RMkDnAY5STt+lXbXDcRmNooWyzqRyFV+J4C2UBEjrOtVYLFG7ctZpAOaYGUCOniI29qvsGyQLuUA5SOZPMgjXeqeF4euy3ApPICPyoxw/goRj3lyZExMT8qnRVSw3ZxQA4kk7S/zgLqaMf3dkQMbZZRtmjwmdhyGp3olgLSoPD4fPmaIY9UNte8cIoIOUkCek9aJqJ2yGI4pbtiAjZ+iyoX/Vz9qEYnibOwz6Cdht/vWtXiWG7zK1y2Y56UMx+IwZdhI/zLsKDlQW7ChO8UAofiFYftbwruXFy3/h3NvI9K3uA7tRlW4rq3IHb2odxbhveWrlnLqBmQ/XSlZs3nhuDnSNJE1BiPDrzGhqRcQSIEVkpDcvjaNqjN4ipDb32pFt+k0gabjGmNcjzqQtUV1hTIzNXU3NS0w3KYWR/wDsP51NYwzc9Y/eWqv20wB3i+9o1OMQs/4lrb/0zULWfshYTB8tV/nUtq20Eajrt/OqwvqdBcs/wkfrTheUfesH5igJ0ssfFDEe386k4Oh75p5Eb+tVkxAkf4Gmu5q4iEXhcWMtxYkbZht+VadPynMWvWBmLEkkE6SIoZjOP93Oqr7GrXHc6qly2gKsNTPzEVQsIuIcK9rYjaPrVc+Ezwgt4i7dbwsHUjkYq5hRfBB1Qg6E71pRwe1ahkCgxsOdB+K4yJgjNyEgE+lPUhyiuM7Q3e5ytlVzu4MEj060PsWWvSxYGelZrh+Ge8xe6SU6HcnpFHsLj+6Q5RqNlHIdPM1fovC5huB5WzDeiBthD1Y78zTbLi7bRySs8uc9Kg4sSjgvBQxG8zzgilpKc4qOeXXnp+dWf7ks3Abtwm8eubbyAFJbFi6uU7NqNdZ5x0NZbi/CruCebTMUaTObbyNBL3GuyllwHtkho1DbeQrK3ODOnhYaHoTU9/tHdMEuCByJEfSjeF7Q4bEAW7sK3XlPryqeKrmAvDOHojqVDTIrWPP2iyqjRg0+1CcFw7/zISRC+KZnTl860eEwc4xTytW5J825VUFrxnj9hVxN9I/6j/e/eNBbFwzEfWjfHrobFXWm3q7nY8yaB3wA/wAS/I1jfKlkL5D+KkOn/wDVNFsR8afKuawsf4i/KpMlz2/iqIqOg/ip5tgf9Rf4aZAn4l/hpguvT/3V1MzD8afw11G6G3uYRp0Fz/7gNS2sC51y3/LxIaqqLX47XvbuCKs2u7GneWvX9oP1qTTJgnn/AK889LdKcO/ig3vLwIar2RbnW5b9c9wU5EUExdT075xTB03BAHe+c20/lWu7KXlcG3dBYDXxLlidisdKyGVZjvEPP/HaKnwVxrVwPbZCV5d/II6EHcU5dXZWbj0bHcFBQ2iAQ8lCdQGjb0NYjCv9jZ0fKjzvroPSttguLBkGZZWAWVWzNbPURuKr8fsWL5CufER4LsCD5N0Na+eWfi6rGr2mcsQjBgPiJU/rQXEY1sVdCsVKdYgg0S4twm5h0KNoGO+XwkctVoFwy0veiSABvoRpS0tp8a/dKoUS0afzoDauuGh3Ik66jQ0cxr+A3WLCNgEkxsImsTiL0uSH3/EgB+gouWw3vDOJEAuTOUiB+vvWg7b8Rtvh0ZHAcEMBGv8AxWP7NW5tvsQQBOuntVDi2KJ0JkLI0mq2nSzguLNczLIUyGHi2Yb7UfwvFVdct5iT7mawfDtHBDqgnpNaC+sEModw2oI1AI3EGp3o9La4S22aLawDz3PnFSJatgaooJ0EVFcvgEFhlJ6jWrfD7C3DmuOLVsffbc+VsDc+dVxS8C/AOHvJy8tW/wC1J+ponxfiS4XDXGY/tbgIlRPiIj5AVVucWW3aOTMlgfebRrnko316mvNO0naA4htmgaBRcgActOtLLgpyEYm94i4dpn8Aqi5LGSzz/lFc4nZYj/5lSC0APgB9bhrNZomN3/hWudmEavt0Wn3cOdB3aD/XNQPhzGq2/wCL/epMpaNM1yfRaja4fxPp5LSNYHRB/qphAA1Cfx0wST+/8hXU3MOifxV1PYbrv1EAG/H+k+lWHxQIjvLw9baH5VEQnJ8UIPMfyrnxCx/jYqf8o9udQpzMhBm+/kO6Wfeo3dBtdY//AElpDiF1/bX5/eUe+xpDdWZ7+95Qg/nQRyOv4j72R+lWsNbVjE2/9VuP1qFMSNf22II65BvS/bIIi9f90X6a0jWsFj+5uBrd62jDQ/s2gjoY3Fbjh/a3D3IVimeII5N6Zh9K86bFLrF+4PW2v0p6YhCNcSRy1t/qKqZWFZK9AuWRnKhs1tv+m3I8o8qzuN4XbzMIe03T4l9jyoXY4kU2xgIHJ7bkeQ2mr/8A4mt7M4JPNZI+TCRWkzlT22K+Lwd11At5oXQEMIPzoBicAdSRcMb/AA7860WH43YVh+1TLzRhlB36ioS1ohzbW3mMxBWI9iDRIArh982zvcIPKcsj1qfiltYBGdSdfiB9d6hxXCFb8QM/+rpHuTV63wOxlUs4nnmcAbdZ1osGwsIqqGbPrzBWprPGT3ZtKjEkgqeh568gRU/dYZRDYi0FB2Ug03+/MJYJ7tTePKTAmlP0JP7nv3mWFDMY1kkD50ZxJw+Dnv7iXLiCBbDCAfOsrjO12McFU7u2h+6mnzMzQP7DdYywBJ96fdrwWtiPaDtJdxTbJlGwBIAHlQpMCzCciH/VrV61wxtSbOnkT/KrAwltfitN5w3P3FTcldqj/d5gH7OI6h6c2D5HDf8Avq7+xy6i56SP51GbNg6xc+n/AOVTs9Kl3CAD/wCGidpuVDewe37BRpPx1ZFiwSZz+Xhn8jUV6zZnTPHXL+k0bGlM4diNLNv5/wC9QNZY8rQ/r1qa7bt9Cf8ASR+tV3t2+eb5f70bI7uG6Wvp/OlqHJa/e/h/3rqNk9owm/ufzqbFfe9q6uqI0NPL3qjf+Nf8p/KurqYTWtjUl7cV1dSAZf39xQvFc66uoCrf+H+ulUBv7V1dVJ9kxXwj1rPYnf3rq6niVRvXLS11UlK+1IldXUoawnKr+C+L2rq6kqDPDNvei5+H3/WurqhYdj9j7/lQ67sP650tdTSqj9aZc2pK6iEoXv51Tv0tdVJqCurq6rJ//9k=" alt="icecream"><br>
+        <h3>Chocolate ice cream</h3>
+        <p>A festival chocolate treat piled high with whipped cream,colorful sprinkles,and cherry on top</p>
+      </div>
+      <div class="card">
+        <img src="https://cdn.pixabay.com/photo/2022/11/16/18/52/ice-cream-7596581_1280.jpg" alt="icecream"><br>
+        <h3>Gourmet Dark Cone</h3>
+        <p>Intense dark chocolate ice cream served in a crunchy waffle cone for a rich, bold flavor</p>
+      </div>
+      <div class="card">
+        <img src="https://tse4.mm.bing.net/th/id/OIP.ZysvxH_f022B3eazSpah_AHaKe?rs=1&pid=ImgDetMain&o=7&rm=3" alt="icecream"><br>
+        <h3>Classic Layered Delight</h3>
+        <p>A timeless combination of smooth vanilla and chocolate layers drizzled with premimum cocoa sauce</p>
+      </div>
+     <div class="card">
+        <img src="data:imagejpeg;base64,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" alt=""><br>
+        <h3>Floral Vanilla Tiered Cake</h3>
+        <p> A stunning three-tier white vanilla cake beautifully adorned with delicate fresh flowers for a classic,elegant look </p>
+      </div>
+      <div class="card">
+        <img src="https://wallpapercave.com/wp/wp7367683.jpg" alt=""><br>
+        <h3>Decadent Chocolate Truffle</h3>
+        <p>A deep ,rich chocolate cake topped with smooth granche and "Happy Birthday" plaque,perfect for every chocolate lover's celebration</p>
+      </div>
+      <div class="card">
+        <img src="https://img.freepik.com/premium-photo/beautiful-birthday-cake_1049675-1951.jpg" alt=""><br>
+        <h3>Pink Blossom Cream Cake</h3>
+        <p>A lovely single-tier cake featuring intricate pink floral icing designs and decorative pearls for a charming and sweet presentation</p>
+       </div>
+           <div class="card">
+        <img src="https://img.freepik.com/premium-photo/birthday-cake-image_981309-150.jpg" alt=""><br>
+        <h3>Pastel Dream Drip Cake</h3>
+        <p>A vibrant multi-layered cake with beautiful pink and blue frosting ,finishing with a stylish white chocolate drip and floral toppers</p>
+       </div>
+      <div class="card">
+        <img src="https://cdn.pixabay.com/photo/2024/04/28/09/42/ai-generated-8725190_1280.png" alt="Pasta"><br>
+        <h3>Spaghetti Bolognese</h3>
+        <p>Traditional long-strand spaghetti tossed in a rich,savory meat sauce and topped with fresh basil</p>
+      </div>
+      <div class="card">
+        <img src="https://insanelygoodrecipes.com/wp-content/uploads/2024/01/Angel-Hair-Pasta-Top-View-683x1024.jpg" alt="Pasta"><br>
+        <h3>Classic Garlic & Herb Pasta</h3>
+        <p>Perfectly cooked pasta sauteed with aromatic garlic ,oliva oil,and a blend of mediterranean herbs</p>
+      </div>
+      <div class="card">
+        <img src="https://thumbs.dreamstime.com/b/portion-classic-italian-penne-arrabiata-portion-classic-italian-penne-arrabiata-basil-freshly-grated-peccorino-135689664.jpg" alt="Pasta"><br>
+        <h3>Spicy Penne Arrabbiata</h3>
+        <p>Al dente penne pasta smothered in a fiery tomato sauce with a hint of garlic and chilli flakes</p>
+      </div>
+      <div class="card">
+        <img src="https://www.crazyforcrust.com/wp-content/uploads/2023/06/Easy-Italian-Pasta-Salad-4-768x1152.jpg" alt="Pasta"><br>
+        <h3>Tricolor Fusilli Salad</h3>
+        <p>A vibrant mix of spiral pasta fresh vegetables , and zesty dressing for a light and healthy meal</p>
+      </div>
+       <div class="card">
+        <img src="https://i0.wp.com/bakaasur.com/wp-content/uploads/2022/12/fried-momo-recipe.jpg" alt="">
+        <h3>Golden Fried Momos</h3>
+        <p>Crispy, deep-fried dumplings filled with seasoned vegetables and served with a spicy dipping sauce</p>
+      </div>
+       <div class="card">
+        <img src="https://buddymantra.com/wp-content/uploads/2020/08/010317_FriedMomos-1.jpg" alt="">
+        <h3>Steamed Classic Momos</h3>
+        <p>Authentic Himalayan-style steamed momos with a soft outer layer and a juicy, flavorful filling</p>
+      </div>
+       <div class="card">
+        <img src="https://b.zmtcdn.com/data/pictures/chains/1/21301161/36fec42259b02b831ee671a878c8e037.jpg" alt="">
+        <h3>Spicy Schezwan Momos</h3>
+        <p>soft steamed momos tossed in a bold and fiery schezwan chutney for an extra kick of spice</p>
+      </div>
+       <div class="card">
+        <img src="https://t3.ftcdn.net/jpg/06/75/68/88/360_F_675688865_2bHsgqb2tPkpBesTIoMPZBKAPchzINua.jpg" alt="">
+        <h3>Pan-Seared Gyoza Style</h3>
+        <p>Perfectly pan-seared momos with crunchy bottom and tender-top,served with a tangy soy-garlic dip</p>
+      </div>
+      <div class="card">
+        <img src="https://wallpapers.com/images/hd/french-fries-960-x-960-picture-317878ocb9hyulx0.jpg" alt=""><br>
+         <h3>Classic Golden Fries</h3>
+         <p>Perfectly salted, crispy golden fries served with a side of creamy garlic mayo and tangy ketchup</p>
+      </div>
+      <div class="card">
+        <img src="https://static.vecteezy.com/system/resources/previews/027/536/411/non_2x/delicious-french-fries-on-a-white-background-photo.jpg" alt=""><br>
+         <h3>Peri-Peri seasoned fries </h3>
+         <p>Hot and crispy fries tossed in a zesty peri-peri spice mix for those who love a little extra heat</p>
+      </div>
+      <div class="card">
+        <img src="https://wallpapers.com/images/hd/french-fries-960-x-960-picture-317878ocb9hyulx0.jpg" alt=""><br>
+         <h3>Masala Crinkle Fries</h3>
+         <p>Deep-fried to perfection with a secret blend of herbs and spices,making them the ultimate crunchy snack</p>
+      </div>
+      <div class="card">
+        <img src="https://st3.depositphotos.com/1027198/14485/i/950/depositphotos_144857921-stock-photo-delicious-french-fries.jpg" alt=""><br>
+         <h3>Cheesy Dip Fries</h3>
+         <p>Our signature crispy fries paired with a rich,melted chesse sauce for a truly indulgent experince</p>
+      </div>
+      
+      <div class="card">
+        <img src="https://wallpaperaccess.com/full/8300727.jpg"alt="Pizza"><br>
+        <h3>Garden Veggie Special</h3>
+        <p>A colorful medley of fresh vegetables and melting chesse on a perfectly charred stone-baked crust </p>
+      </div>
+      <div class="card">
+        <img src="https://static.vecteezy.com/system/resources/previews/031/720/566/non_2x/pizza-ai-generated-free-photo.jpg"alt="Pizza"><br>
+        <h3>Classic Margherita</h3>
+        <p>The timeless italian favourite featuring fresh basil leaves ,premimum mozzarella,and zesty tomato sauce</p>
+      </div>
+      <div class="card">
+        <img src="https://tse2.mm.bing.net/th/id/OIP.XyjjqV8wR74EnqLtQKRsNQHaEK?rs=1&pid=ImgDetMain&o=7&rm=3"alt="Pizza"><br>
+        <h3>Classic Pepperoni</h3>
+        <p>slices of smoky pepperoni layered over a rich tomato base for that authentic wood-fired punch </p>
+      </div>
+      <div class="card">
+        <img src="https://cdn.pixabay.com/photo/2024/04/18/10/41/ai-generated-8704060_1280.jpg"alt="Pizza"><br>
+        <h3>Rustic Gourmet Flatbread</h3>
+        <p>An artisanal thin-crust pizza toped with gourmet ingredients ,sliced and ready for sharing</p>
+      </div>
+      <div class="card">
+        <img src="https://th.bing.com/th/id/R.abb18eea3fe18e97c4d5e3e7aae91e23?rik=2fUu4MERPIxEMQ&riu=http%3a%2f%2fpluspng.com%2fimg-png%2fburger-png-hd-burger-sriracha-burger-png-1119.png&ehk=9bWBmh1POVaTc7tiw3zQu%2f4HlpdRmbxJqs1YGUJX6DA%3d&risl=&pid=ImgRaw&r=0"
+          alt="Burger"><br>
+        <h3>The Ultimate Cheeseburger</h3>
+        <p>A succulent patty topped with a thick slice of melted cheddar,crisp lettuce,and fresh</p>
+      </div>
+      <div class="card">
+        <img src="https://thumbs.dreamstime.com/z/classic-burgers-see-my-other-works-portfolio-32583064.jpg" alt="Burger"><br>
+        <h3>Double Decker Stack</h3>
+        <p>For the big appetite-two juicy patties layered with double cheese and crunchy greens </p>
+      </div>
+      <div class="card">
+        <img src="https://brookrest.com/wp-content/uploads/2020/05/AdobeStock_282247995-scaled.jpeg"alt="Burger"><br>
+        <h3>Classic Garden Burger</h3>
+        <p>A fresh and simple delight featuring a perfectly grilled patty and garden-fresh onions and lettuce</p>
+      </div>
+      <div class="card">
+        <img src="https://tse2.mm.bing.net/th/id/OIP.b3nz6VS4IbcI-lBGRFfXwQHaF7?rs=1&pid=ImgDetMain&o=7&rm=3" alt="Burger"><br>
+        <h3>Signature Brioche Burger</h3>
+        <p>A premimum grilled patty served in a toasted buttery brioche bun for a rich melt-in- your-mouth experince</p>
+      </div>
+      <div class="card">
+        <img src="https://news24online.com/wp-content/uploads/2023/01/Vada-Pav.jpg" alt=""><br>
+        <h3>Classic Mumbai vada Pav</h3>
+        <p>The authentic tatse of mumbai street food festuring a spicy potato fritter tucked inside a soft bun with zesty garlic chutney</p>
+      </div>
+      
+         <section id="contact">
+          <div class="contact-container">
+            <input type="text" name="name" placeholder="Enter your name" required>
+            <input type="text" name="email" placeholder="Enter your email" required>
+            <input type="text" name="contact" placeholder="Enter your contact" required>
+            <button type="submit">Submit</button>
+            <button type="send message"> Message</button>
+          </div>
+         </section>
+  <footer>
+    2026 Taste Haven | Designed with 💗 using HTML & CSS
+  </footer>
+</body>
+</html>
+</body>
+
+</html>
